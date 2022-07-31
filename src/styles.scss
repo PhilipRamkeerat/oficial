@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('http://fonts.cdnfonts.com/css/gotham');
+$black: #191414;
+$green: #1DB954;
+$gothan: 'Gotham';
+$gothan-black: 'Gotham Black';
+
+body {
+  background-color: $black;
+  color: $green;
+}
+
+.gothan {
+  font-family: 'Gotham', sans-serif;
+}
+
+.gothan-black {
+  font-family: 'Gotham Black', sans-serif;
+}
+
+.gothan-light {
+  font-family: 'Gotham Light', sans-serif;
+}
+
+.gothan-thin {
+  font-family: 'Gotham Thin', sans-serif;
+}
+
+.gothan-xlight {
+  font-family: 'Gotham XLight', sans-serif;
+}
+
+.gothan-book {
+  font-family: 'Gotham Book', sans-serif;
+}
+
+.gothan-ultra {
+  font-family: 'Gotham Ultra', sans-serif;
+}
+
+
+
+
+
