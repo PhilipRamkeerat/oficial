@@ -1,7 +1,37 @@
-@import '../styles.scss';
-
-
+@import "../styles.scss";
 .title {
   font-family: $gothan;
   color: $green;
+}
+
+.develop {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: $black;
+  height: 100%;
+
+  &__header {
+    background-color: $black-extreme;
+    width: 100%;
+  }
+
+  &__content {
+    display: flex;
+    flex: 1 0 auto; // flex-grow, flex-shrink, flex-basis
+    background-color: $black;
+    width: 100%;
+    justify-content: center;
+    &-development {
+        height: 400px;
+        width: 100%;
+        text-align: center;
+    }
+  }
+
+  &__footer {
+    flex-shrink: 0;
+    background-color: $black-cards;
+    width: 100%;
+  }
 }

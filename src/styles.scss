@@ -1,15 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('http://fonts.cdnfonts.com/css/gotham');
+$black-extreme: #000000;
 $black: #191414;
 $green: #1DB954;
-$gothan: 'Gotham';
+$black-cards: #2E2E2E;
+$gothan: 'Gotham', sans-serif;
 $gothan-black: 'Gotham Black';
-
-body {
+html, body {
   background-color: $black;
-  color: $green;
+  color: white;
+  height: 100%;
+  margin: 0;
+  font-family: $gothan;
 }
-
 .gothan {
   font-family: 'Gotham', sans-serif;
 }
