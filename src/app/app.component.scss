@@ -1,39 +1,82 @@
 @import "../styles.scss";
 .title {
   font-family: $gothan;
-  color: $green;
+  color: $white;
 }
 
 .develop {
   display: flex;
-  width: 100%;
-  flex-direction: column;
-  background-color: $black;
-  height: 100%;
-
+  justify-content: center;
   &__header {
-    background-color: $black-extreme;
-    width: 100%;
-    font-family: $gothan-black;
-    color: $green;
-  }
-
-  &__content {
+    color: $white;
+    font-size: 2rem;
+    background-color: $black-cards;
+    width: 70rem;
+    // min-height: 30rem;
+    // max-height: auto;
+    height: auto;
+    padding: 2rem;
     display: flex;
-    flex: 1 0 auto; // flex-grow, flex-shrink, flex-basis
-    background-color: $black;
-    width: 100%;
-    justify-content: center;
-    &-development {
-        height: 400px;
-        width: 100%;
-        text-align: center;
+    flex-direction: column;
+
+
+    &--informations {
+      font-family: 'Gotham Black';
+      font-size: 48px;
+      line-height: 3.5rem;
+    }
+
+    &--description {
+      margin-top: 2rem;
+      // font-family: 'Inter';
+      font-family: 'Gotham Light';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      /* Paragraph Font */
+      // color: #767676;
+      color: $white;
+    }
+
+    &--more-info {
+      margin-top: 2rem;
+
+      &-btn {
+        padding: 1rem;
+        background-color: $yellow;
+        border-radius: 8px;
+        border: none;
+        width: auto;
+        height: 51px;
+        text-transform: uppercase;
+        color: $white;
+        font-family: 'Gotham Light';
+      }
     }
   }
 
   &__footer {
-    flex-shrink: 0;
-    background-color: $black-cards;
-    width: 100%;
+    color: black;
+  }
+}
+
+.header-container-flex {
+  display: flex; justify-content: space-around;
+}
+
+.imagem {
+  width: 325.72px;
+  height: 300px;
+}
+
+@media only screen and (max-width: 800px) {
+  .header-container-flex {
+    flex-direction: column;
+  }
+  .imagem {
+     margin-top: 1rem;
+     width: 325.72px;
+     height: 300px;
   }
 }

@@ -1,45 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('http://fonts.cdnfonts.com/css/gotham');
+// @import url('http://fonts.cdnfonts.com/css/gotham');
+$yellow: #FFB400;
 $black-extreme: #000000;
 $black: #121212;
 $green: #1DB954;
 $black-cards: #2E2E2E;
 $gothan: 'Gotham';
 $gothan-black: 'Gotham Black';
+$white: white;
 html, body {
   background-color: $black;
   color: white;
   height: 100%;
   margin: 0;
+  padding: 0;
   font-family: $gothan;
 }
+
+// Reset Default HTML Margins and paddings
+p {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Gotham Black";
+  src: local("Gotham Black"), url(./assets/fonts/Gotham-Font/Gotham-Black.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "Gotham Light";
+  src: local("Gotham Black"), url(./assets/fonts/Gotham-Font/Gotham-Light.otf) format("truetype");
+}
+
 .gothan {
   font-family: 'Gotham', sans-serif;
 }
 
-.gothan-black {
-  font-family: 'Gotham Black', sans-serif;
-}
+// .gothan-black {
+//   font-family: 'Gotham Black', sans-serif;
+// }
 
 .gothan-light {
   font-family: 'Gotham Light', sans-serif;
 }
 
-.gothan-thin {
-  font-family: 'Gotham Thin', sans-serif;
-}
+// .gothan-thin {
+//   font-family: 'Gotham Thin', sans-serif;
+// }
 
-.gothan-xlight {
-  font-family: 'Gotham XLight', sans-serif;
-}
+// .gothan-xlight {
+//   font-family: 'Gotham XLight', sans-serif;
+// }
 
-.gothan-book {
-  font-family: 'Gotham Book', sans-serif;
-}
+// .gothan-book {
+//   font-family: 'Gotham Book', sans-serif;
+// }
 
-.gothan-ultra {
-  font-family: 'Gotham Ultra', sans-serif;
-}
+// .gothan-ultra {
+//   font-family: 'Gotham Ultra', sans-serif;
+// }
 
 
 
