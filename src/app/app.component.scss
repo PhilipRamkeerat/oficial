@@ -19,9 +19,8 @@
     display: flex;
     flex-direction: column;
 
-
     &--informations {
-      font-family: 'Gotham Black';
+      font-family: "Gotham Black";
       font-size: 48px;
       line-height: 3.5rem;
     }
@@ -29,7 +28,7 @@
     &--description {
       margin-top: 2rem;
       // font-family: 'Inter';
-      font-family: 'Gotham Light';
+      font-family: "Gotham Light";
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
@@ -51,7 +50,7 @@
         height: 51px;
         text-transform: uppercase;
         color: $white;
-        font-family: 'Gotham Light';
+        font-family: "Gotham Light";
       }
     }
   }
@@ -62,7 +61,8 @@
 }
 
 .header-container-flex {
-  display: flex; justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .imagem {
@@ -70,13 +70,26 @@
   height: 300px;
 }
 
+.container-imagem {
+  margin-top: 1rem;
+  width: 30%;
+
+  &--text {
+    font-family: "Gotham Light";
+    font-size: 1rem;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .header-container-flex {
     flex-direction: column;
   }
   .imagem {
-     margin-top: 1rem;
-     width: 325.72px;
-     height: 300px;
+    margin-top: 1rem;
+    width: 325.72px;
+    height: 300px;
+  }
+  .container-imagem {
+    width: 100%;
   }
 }

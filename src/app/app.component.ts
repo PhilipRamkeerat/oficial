@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   log() {
-    console.log('Log Called');
+   alert('Opa, oi !! Ainda estou implementando novas funcionalidades neste meu portfólio, obrigado por visitar, em breve teremos esse botão habilitado :)')
   }
 }
