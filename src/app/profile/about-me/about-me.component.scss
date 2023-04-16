@@ -1,0 +1,95 @@
+@import "../../../styles.scss";
+
+.developer-profile {
+  display: flex;
+  justify-content: center;
+
+  &__header {
+    font-family: $gothan;
+    color: $white;
+    font-size: 2rem;
+    background-color: $black-cards;
+    width: 70rem;
+    height: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    &-information {
+      font-family: "Gotham Black";
+      font-size: 48px;
+      line-height: 3.5rem;
+
+      &--highlight {
+        color: $yellow;
+      }
+    }
+
+    &-description {
+      margin-top: 2rem;
+      font-family: "Gotham Light";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: $white;
+      text-align: justify;
+    }
+
+    &-more-info {
+      margin-top: 2rem;
+
+      &-btn {
+        padding: 1rem;
+        background-color: $yellow;
+        border-radius: 8px;
+        border: none;
+        width: auto;
+        height: 51px;
+        text-transform: uppercase;
+        color: $white;
+        font-family: "Gotham Light";
+      }
+    }
+  }
+
+  &__footer {
+    color: black;
+  }
+}
+
+.developer-profile__header-container-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.developer-profile__image {
+  width: 325.72px;
+  height: 300px;
+}
+
+.developer-profile__image-container {
+  margin-top: 1rem;
+  width: 30%;
+
+  &--text {
+    font-family: "Gotham Light";
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .developer-profile__header-container-flex {
+    flex-direction: column;
+  }
+
+  .developer-profile__image {
+    margin-top: 1rem;
+    width: 325.72px;
+    height: 300px;
+  }
+
+  .developer-profile__image-container {
+    width: 100%;
+  }
+}

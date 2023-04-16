@@ -1,0 +1,32 @@
+<div class="developer-profile">
+  <header class="developer-profile__header gothan-black">
+    <div class="developer-profile__header-container-flex">
+      <!-- Left Content -->
+      <div>
+        <div class="developer-profile__header-information">
+          <p>{{name}}</p>
+          <p><span class="developer-profile__header-information--highlight">Front-end</span> Developer</p>
+        </div>
+        <div class="developer-profile__header-description">
+          <p>{{description}}</p>
+        </div>
+        <div class="developer-profile__header-more-info">
+          <button
+            type="button"
+            class="developer-profile__header-more-info-btn"
+            (click)="showMoreInfo()"
+          >More Information</button>
+        </div>
+      </div>
+      <!-- Right Content -->
+      <div class="developer-profile__image-container">
+        <img
+          class="developer-profile__image"
+          src="assets/images/web-development.png"
+          alt="Profile Image"
+        >
+        <p class="developer-profile__image-container--text">Project under development, stay tuned for updates</p>
+      </div>
+    </div>
+  </header>
+</div>
