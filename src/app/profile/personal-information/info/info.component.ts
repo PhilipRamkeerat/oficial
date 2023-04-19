@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./info.component.scss']
 })
 export class InfoComponent {
-  age = 30;
+  age = 27;
   residence = 'Manaus/Amazonas';
   freelance = 'Available';
   address = 'Brazil';
