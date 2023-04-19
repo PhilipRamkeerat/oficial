@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class SocialIconsComponent {
   socialMedia = [
     {
-      link: 'https://www.instagram.com/phil.rkt/',
+      link: 'https://instagram.com/philip.devfront/',
       iconUrl: 'assets/images/social-icons/insta.png',
       altText: 'Instagram'
     },
