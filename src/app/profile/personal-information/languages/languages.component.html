@@ -1,0 +1,18 @@
+<div class="languages">
+  <p class="title">Languages</p>
+  <div
+    *ngFor="let language of languages"
+    class="language"
+  >
+    <div class="language-info">
+      <span class="language-name">{{ language.name }}</span>
+      <span class="percentage">{{ language.percentage }}%</span>
+    </div>
+    <div class="progress">
+      <div
+        class="progress-bar"
+        [style.width]="language.percentage + '%'"
+      ></div>
+    </div>
+  </div>
+</div>

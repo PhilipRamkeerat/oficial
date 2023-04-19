@@ -5,6 +5,7 @@ import { PersonalInformationComponent } from './personal-information/personal-in
 import { SocialIconsComponent } from './personal-information/social-icons/social-icons.component';
 import { InfoComponent } from './personal-information/info/info.component';
 import { HorizontalLineComponent } from './personal-information/horizontal-line/horizontal-line.component';
+import { LanguagesComponent } from './personal-information/languages/languages.component';
 
 
 
@@ -14,7 +15,8 @@ import { HorizontalLineComponent } from './personal-information/horizontal-line/
     PersonalInformationComponent,
     SocialIconsComponent,
     InfoComponent,
-    HorizontalLineComponent
+    HorizontalLineComponent,
+    LanguagesComponent
   ],
   imports: [
     CommonModule
