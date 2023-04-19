@@ -1,0 +1,30 @@
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.skill-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  /* ajuste este valor para o tamanho desejado do ícone */
+  height: 24px;
+  /* ajuste este valor para o tamanho desejado do ícone */
+  background-color: orange;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.skill-item:last-child {
+  margin-right: 0;
+}
+
+.icon {
+  width: auto;
+  /* Ajuste para o tamanho desejado da imagem do icone */
+  height: 12px;
+  /* Ajuste para o tamanho desejado da imagem do icone */
+}

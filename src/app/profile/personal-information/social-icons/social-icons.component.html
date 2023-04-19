@@ -1,0 +1,17 @@
+<ul class="skills-list">
+  <li
+    *ngFor="let item of socialMedia"
+    class="skill-item"
+  >
+    <a
+      href="{{item.link}}"
+      target="_blank"
+    >
+      <img
+        class="icon"
+        src="{{item.iconUrl}}"
+        alt="{{item.altText}}"
+      >
+    </a>
+  </li>
+</ul>
