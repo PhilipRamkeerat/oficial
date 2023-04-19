@@ -1,4 +1,4 @@
-import { Component, EventEmitter, HostListener, Output } from '@angular/core';
+import { Component, EventEmitter, HostListener, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-modal-hire',
@@ -8,33 +8,52 @@ import { Component, EventEmitter, HostListener, Output } from '@angular/core';
 export class ModalHireComponent {
   @Output() onCancelClick = new EventEmitter<void>();
   @Output() onOkClick = new EventEmitter<void>();
+  @Output() onCloseModal = new EventEmitter<void>();
+  @Input() isModalOpen: any;
+  isFirstTime = true;
 
-  @HostListener('document:keydown.escape')
-  onEsc() {
-    console.log('onEsc');
+  constructor() { }
 
-    this.closeModal();
+  @HostListener('document:keydown.escape', ['$event'])
+  onEsc(event: KeyboardEvent) {
+    if (event.key === 'Escape') {
+      this.closeModal();
+    }
   }
 
-  @HostListener('document:click', ['$event.target'])
-  onClick(targetElement: HTMLElement) {
-    console.log('onClick');
+  @HostListener('document:click', ['$event'])
+  onClick(event: MouseEvent) {
+    const targetElement = event.target as HTMLElement;
+    const isClickedOutsideModal = this.isModalOpen && targetElement.closest('.modal__content') === null;
 
-    // if (targetElement.closest('.modal__content') === null) {
-    //   this.closeModal();
-    // }
+    if (isClickedOutsideModal && this.isFirstTime) {
+
+      this.isFirstTime = false;
+    } else if (isClickedOutsideModal) {
+      console.log('modal fechado');
+
+      this.closeModal();
+    }
   }
 
   onCancel() {
+    debugger;
     this.closeModal();
+    this.onCancelClick.emit();
   }
 
   onOk() {
-    // Faça alguma ação aqui
+    debugger;
     this.closeModal();
+    this.onOkClick.emit();
   }
 
   private closeModal() {
-    this.onCancelClick.emit();
+    this.onCloseModal.emit();
+    this.resetIsFirstTime();
+  }
+
+  private resetIsFirstTime() {
+    this.isFirstTime = true;
   }
 }

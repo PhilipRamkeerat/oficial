@@ -40,4 +40,6 @@
   *ngIf="isModalOpen"
   (onCancelClick)="onCancel()"
   (onOkClick)="onOk()"
+  (onCloseModal)="closeModal()"
+  [isModalOpen]="isModalOpen"
 ></app-modal-hire>
