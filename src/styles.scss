@@ -8,7 +8,10 @@ $black-cards: #2E2E2E;
 $gothan: 'Gotham';
 $gothan-black: 'Gotham Black';
 $white: white;
-html, body {
+$gotham-light: 'Gotham Light';
+
+html,
+body {
   background-color: $black;
   color: white;
   height: 100%;
@@ -60,8 +63,3 @@ p {
 // .gothan-ultra {
 //   font-family: 'Gotham Ultra', sans-serif;
 // }
-
-
-
-
-
