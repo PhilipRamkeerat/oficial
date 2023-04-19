@@ -4,10 +4,11 @@
 .informations {
   padding: 1rem;
   background-color: $black-cards;
+  text-align: center;
 
   &__image {
     width: 150px;
-    height: 150px;
+    height: auto;
     margin-bottom: 10px;
   }
 
