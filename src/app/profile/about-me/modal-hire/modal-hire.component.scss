@@ -1,0 +1,51 @@
+@import "../../../../styles.scss";
+
+.modal {
+  font-family: $gotham-light;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+
+  &__content {
+    background-color: $yellow;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px $black-cards;
+
+    &__title {
+      color: $black-cards;
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: center;
+      font-family: $gothan-black;
+
+      &__button {
+        background-color: $black-cards;
+        color: orange;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin: 0px 10px;
+        font-size: 1rem;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $black-cards;
+          color: $white;
+        }
+      }
+    }
+  }
+}

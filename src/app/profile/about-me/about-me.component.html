@@ -15,9 +15,11 @@
           <button
             type="button"
             class="developer__header-more-info-btn"
-            (click)="hireEvent()"
+            (click)="isModalOpen = true"
           >Hire Me !</button>
         </div>
+
+
       </div>
 
       <!-- Right Content -->
@@ -33,3 +35,9 @@
     </div>
   </header>
 </div>
+
+<app-modal-hire
+  *ngIf="isModalOpen"
+  (onCancelClick)="onCancel()"
+  (onOkClick)="onOk()"
+></app-modal-hire>
