@@ -1,0 +1,31 @@
+@import "../../../../styles.scss";
+
+
+.info {
+  display: flex;
+  flex-direction: column;
+  font-family: $gotham-light;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+
+  &__label {
+    font-size: 15px;
+    text-align: left;
+    background-color: #FFB400;
+    color: #2B2B2B;
+  }
+
+  &__value {
+    font-size: 15px;
+    text-align: right;
+    color: #FFF;
+
+    &--freelance {
+      color: #7EB942;
+    }
+  }
+}
