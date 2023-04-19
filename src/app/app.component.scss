@@ -1,0 +1,24 @@
+@import "../styles.scss";
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-container>* {
+  margin-right: 1rem;
+}
+
+.main-container>*:last-child {
+  margin-right: 0;
+}
+
+.personal-class {
+  background-color: $black-cards;
+  width: 305px;
+}
+
+.navigation-bar {
+  background-color: $black-cards;
+  width: 108px;
+}

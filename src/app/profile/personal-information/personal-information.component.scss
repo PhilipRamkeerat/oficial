@@ -1,0 +1,58 @@
+@import "../../../styles.scss";
+
+
+.informations {
+  padding: 1rem;
+  background-color: $black-cards;
+
+  &__image {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+
+  &__name {
+    font-family: 'Gotham Black';
+    color: #FFF;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  &__description {
+    font-family: 'Gotham Light';
+    color: $white;
+    font-size: 15px;
+    margin-bottom: 0.5rem;
+  }
+}
+
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.skill-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  /* ajuste este valor para o tamanho desejado do ícone */
+  height: 24px;
+  /* ajuste este valor para o tamanho desejado do ícone */
+  background-color: orange;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.skill-item:last-child {
+  margin-right: 0;
+}
+
+.icon {
+  // Ajuste para o tamanho desejado da imagem do icone
+  width: auto;
+  height: auto;
+}
