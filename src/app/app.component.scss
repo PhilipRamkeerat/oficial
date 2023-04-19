@@ -1,4 +1,5 @@
 @import "../styles.scss";
+$breakpoint-small: 800px;
 
 .main-container {
   display: flex;
@@ -21,4 +22,16 @@
 .navigation-bar {
   background-color: $black-cards;
   width: 108px;
+}
+
+
+@media only screen and (max-width: $breakpoint-small) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .personal-class {
+    width: 100%;
+    order: 2;
+  }
 }
