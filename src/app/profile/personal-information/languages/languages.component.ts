@@ -9,6 +9,6 @@ export class LanguagesComponent {
 
   languages = [
     { name: 'English', percentage: 50 },
-    { name: 'Portuguese', percentage: 50 }
+    { name: 'Portuguese', percentage: 100 }
   ];
 }

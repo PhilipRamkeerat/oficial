@@ -37,13 +37,11 @@ export class ModalHireComponent {
   }
 
   onCancel() {
-    debugger;
     this.closeModal();
     this.onCancelClick.emit();
   }
 
   onOk() {
-    debugger;
     this.closeModal();
     this.onOkClick.emit();
   }

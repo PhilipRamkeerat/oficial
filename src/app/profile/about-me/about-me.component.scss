@@ -70,11 +70,6 @@ $breakpoint-small: 800px;
 
     &-container {
       margin-top: 1rem;
-
-      &-text {
-        font-family: "Gotham Light";
-        font-size: 1rem;
-      }
     }
   }
 
@@ -83,6 +78,14 @@ $breakpoint-small: 800px;
   }
 
   @media only screen and (max-width: $breakpoint-small) {
+
+    .developer__header {
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
+
     .developer__header-container-flex {
       display: flex;
       flex-direction: column;
