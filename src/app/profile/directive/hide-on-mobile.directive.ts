@@ -18,7 +18,7 @@ export class HideOnMobileDirective {
 
   @HostListener('window:resize')
   onResize() {
-    this.isMobile = this.window.innerWidth < 800;
+    this.isMobile = this.window.innerWidth <= 800;
     if (this.isMobile) {
       this.renderer.setStyle(this.el.nativeElement, 'display', 'none');
       console.log('Element hidden on mobile');
