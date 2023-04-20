@@ -8,6 +8,7 @@ import { InfoComponent } from './personal-information/info/info.component';
 import { LanguagesComponent } from './personal-information/languages/languages.component';
 import { PersonalInformationComponent } from './personal-information/personal-information.component';
 import { SocialIconsComponent } from './personal-information/social-icons/social-icons.component';
+import { ProgressBarComponent } from './personal-information/progress-bar/progress-bar.component';
 
 // Fornecer o serviço Window manualmente
 export const WINDOW_PROVIDERS = [
@@ -25,6 +26,7 @@ export const WINDOW_PROVIDERS = [
     LanguagesComponent,
     ModalHireComponent,
     HideOnMobileDirective,
+    ProgressBarComponent,
   ],
   imports: [
     CommonModule
