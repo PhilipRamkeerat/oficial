@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class InfoComponent {
   age = 27;
-  residence = 'Manaus/Amazonas';
+  residence = 'Brazil';
   freelance = 'Available';
-  address = 'Brazil';
+  address = 'Manaus/Amazonas';
 }
