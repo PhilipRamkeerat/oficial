@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class LanguagesComponent {
 
   languages = [
-    { name: 'English', percentage: 50 },
-    { name: 'Portuguese', percentage: 100 }
+    { name: 'English', proficiency: 'Intermediate' },
+    { name: 'Portuguese', proficiency: 'Native' }
   ];
 }

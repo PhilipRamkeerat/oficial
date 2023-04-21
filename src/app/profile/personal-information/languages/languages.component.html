@@ -5,13 +5,9 @@
     *ngFor="let language of languages"
     class="languages__list"
   >
-
     <div class="languages__list--info">
       <span class="languages__list--info--name">{{ language.name }}</span>
-      <span class="languages__list--info--percentage">{{ language.percentage }}%</span>
+      <span class="languages__list--info--proficiency">{{ language.proficiency }}</span>
     </div>
-
-    <app-progress-bar [percentage]="language.percentage"> </app-progress-bar>
-
   </div>
 </div>
