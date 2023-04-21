@@ -1,15 +1,12 @@
-<div class="skills">
-  <p class="skills--title">Skills</p>
-
-  <div
-    *ngFor="let skill of skills"
-    class="skills__list"
-  >
-    <div class="skills__list--info">
-      <span class="skills__list--info--name">{{ skill.name }}</span>
-      <span class="skills__list--info--percentage">{{ skill.percentage }}%</span>
-    </div>
-
-    <app-progress-bar [percentage]="skill.percentage"> </app-progress-bar>
-  </div>
+<p class="title">Skills</p>
+<div
+  class="skill"
+  *ngFor="let skill of skills"
+>
+  <img
+    class="skill__icon"
+    [src]="skill.icon"
+    alt="Ícone"
+  />
+  <span class="skill__name">{{ skill.name }}</span>
 </div>

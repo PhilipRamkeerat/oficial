@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-
+interface Skill {
+  icon: string;
+  name: string;
+}
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
@@ -7,11 +10,26 @@ import { Component } from '@angular/core';
 })
 export class SkillsComponent {
 
-  skills = [
-    { name: 'HTML', percentage: 100 },
-    { name: 'CSS', percentage: 100 },
-    { name: 'JavaScript', percentage: 90 },
-    { name: 'Angular', percentage: 90 },
-    { name: 'TypeScript', percentage: 90 }
+  skills: Skill[] = [
+    {
+      icon: 'assets/images/Icons.png',
+      name: 'HTML'
+    },
+    {
+      icon: 'assets/images/Icons.png',
+      name: 'CSS'
+    },
+    {
+      icon: 'assets/images/Icons.png',
+      name: 'JavaScript'
+    },
+    {
+      icon: 'assets/images/Icons.png',
+      name: 'TypeScript'
+    },
+    {
+      icon: 'assets/images/Icons.png',
+      name: 'Angular'
+    }
   ];
 }

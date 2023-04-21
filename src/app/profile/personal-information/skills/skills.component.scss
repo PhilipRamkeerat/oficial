@@ -1,39 +1,27 @@
 @import "../../../../styles.scss";
 
-
-.skills {
+.skill {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  font-family: $gotham-light;
-  font-size: 15px;
+  margin-bottom: 10px;
 
-  &--title {
-    font-family: 'Gotham Black';
-    color: #fff;
+  &__icon {
+    width: 20px;
+    height: auto;
+    margin-right: 1rem;
+  }
+
+  &__name {
+    font-family: $gotham-light;
+    color: #FAFAFA;
     text-align: left;
-    align-self: flex-start;
-    margin-bottom: 1rem;
+    font-size: 15px;
   }
+}
 
-  &__list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 1rem;
-
-    &--info {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-
-      &--name {
-        font-size: 15px;
-      }
-
-      &--percentage {
-        font-size: 15px;
-      }
-    }
-  }
+.title {
+  text-align: left;
+  font-family: $gotham-black;
+  margin-bottom: 1rem;
+  color: $white;
 }
