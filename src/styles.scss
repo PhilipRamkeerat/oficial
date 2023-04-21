@@ -5,10 +5,11 @@ $black-extreme: #000000;
 $black: #121212;
 $green: #1DB954;
 $black-cards: #242526;
-$gothan: 'Gotham';
-$gothan-black: 'Gotham Black';
+$gotham: 'Gotham';
+$gotham-black: 'Gotham Black';
 $white: white;
 $gotham-light: 'Gotham Light';
+$gotham-medium: 'Gotham Medium';
 
 html,
 body {
@@ -17,7 +18,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: $gothan;
+  font-family: $gotham;
 }
 
 // Reset Default HTML Margins and paddings
@@ -36,13 +37,14 @@ p {
   src: local("Gotham Black"), url(./assets/fonts/Gotham-Font/Gotham-Light.otf) format("truetype");
 }
 
+@font-face {
+  font-family: 'Gotham Medium';
+  src: local("Gotham Medium"), url(./assets/fonts/Gotham-Font/GothamMedium.ttf) format("truetype");
+}
+
 .gothan {
   font-family: 'Gotham', sans-serif;
 }
-
-// .gothan-black {
-//   font-family: 'Gotham Black', sans-serif;
-// }
 
 .gothan-light {
   font-family: 'Gotham Light', sans-serif;

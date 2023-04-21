@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ModalHireComponent } from './about-me/modal-hire/modal-hire.component';
 import { HideOnMobileDirective } from './directive/hide-on-mobile.directive';
+import { ExtraSkillsComponent } from './personal-information/extra-skills/extra-skills.component';
 import { HorizontalLineComponent } from './personal-information/horizontal-line/horizontal-line.component';
 import { InfoComponent } from './personal-information/info/info.component';
 import { LanguagesComponent } from './personal-information/languages/languages.component';
@@ -28,7 +29,8 @@ export const WINDOW_PROVIDERS = [
     ModalHireComponent,
     HideOnMobileDirective,
     ProgressBarComponent,
-    SkillsComponent
+    SkillsComponent,
+    ExtraSkillsComponent
   ],
   imports: [
     CommonModule

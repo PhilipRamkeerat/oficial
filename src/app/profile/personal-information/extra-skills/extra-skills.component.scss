@@ -1,0 +1,27 @@
+@import '../../../../styles.scss';
+
+.skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+
+  &__icon {
+    width: 20px;
+    height: auto;
+    margin-right: 1rem;
+  }
+
+  &__name {
+    font-family: $gotham-light;
+    color: #FAFAFA;
+    text-align: left;
+    font-size: 15px;
+  }
+}
+
+.title {
+  text-align: left;
+  font-family: $gotham-black;
+  margin-bottom: 1rem;
+  color: $white;
+}

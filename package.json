@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "ghpages-build" : "ng build --output-path docs --base-href profile"
+    "ghpages-build": "ng build --output-path docs --base-href profile"
   },
   "private": true,
   "dependencies": {
