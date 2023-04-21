@@ -45,6 +45,10 @@ $breakpoint-small: 800px;
       line-height: 24px;
       color: $white;
       text-align: justify;
+
+      p {
+        margin-bottom: 0.5rem;
+      }
     }
 
     &-more-info {
@@ -96,6 +100,21 @@ $breakpoint-small: 800px;
     .developer__header-container {
       width: 100%;
       text-align: center;
+    }
+
+    .developer__header-information {
+      font-size: 20px;
+      line-height: 1.5rem;
+    }
+
+    .developer__header-description {
+      margin-top: 10px;
+      font-size: 12px;
+      line-height: 1.5rem;
+    }
+
+    .developer__header-more-info {
+      margin-top: 10px;
     }
 
     .developer__image {

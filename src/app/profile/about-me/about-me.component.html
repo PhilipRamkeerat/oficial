@@ -9,7 +9,8 @@
           <p><span class="developer__header-information-highlight">Front-end</span> Developer</p>
         </div>
         <div class="developer__header-description">
-          <p>{{description}}</p>
+          <p>{{descriptions.primary}}</p>
+          <p>{{descriptions.secondary}}</p>
         </div>
         <div class="developer__header-more-info">
           <button
@@ -23,14 +24,15 @@
       </div>
 
       <!-- Right Content -->
-      <div class="developer__image-container">
+      <div
+        class="developer__image-container"
+        appHideOnMobile
+      >
         <img
-          appHideOnMobile
           class="developer__image"
           src="assets/images/developer-activity.svg"
           alt="Code boy with a computer"
         >
-
       </div>
     </div>
   </header>

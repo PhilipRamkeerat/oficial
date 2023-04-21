@@ -6,8 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-me.component.scss']
 })
 export class AboutMeComponent {
+
   public name: string = 'Philip Ramkeerat';
-  public description: string = `Hello, I'm Philip Ramkeerat, a Senior Frontend developer specialized in the Angular framework. With several years of experience in web projects, I have all the necessary skills to act as a Frontend.`;
+  descriptions = {
+    primary: `Greetings, I'm a seasoned Senior Frontend Developer with a specialization in the Angular framework. My extensive experience in various web projects has equipped me with all the essential skills to perform exceptionally as a Frontend Developer.`,
+    secondary: ` Let's create something amazing together!`
+  }
+
   linkedInUrl = 'https://www.linkedin.com/in/philip-ramkeerat/';
   isModalOpen = false;
 
