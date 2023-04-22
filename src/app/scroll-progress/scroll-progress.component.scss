@@ -1,0 +1,26 @@
+@import '../../styles.scss';
+.scroll-progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  z-index: 9999;
+}
+
+.progress-bar {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: $yellow;
+  transition: height 0.2s;
+}
+
+.background-bar {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+  opacity: 0.5;
+}
