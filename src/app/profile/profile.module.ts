@@ -12,6 +12,7 @@ import { ProgressBarComponent } from './personal-information/progress-bar/progre
 import { SkillsComponent } from './personal-information/skills/skills.component';
 import { SocialIconsComponent } from './personal-information/social-icons/social-icons.component';
 import { MyServicesComponent } from '../my-services/my-services.component';
+import { CardsComponent } from '../my-services/cards/cards.component';
 
 // Fornecer o serviço Window manualmente
 export const WINDOW_PROVIDERS = [
@@ -32,7 +33,8 @@ export const WINDOW_PROVIDERS = [
     ProgressBarComponent,
     SkillsComponent,
     ExtraSkillsComponent,
-    MyServicesComponent
+    MyServicesComponent,
+    CardsComponent
   ],
   imports: [
     CommonModule

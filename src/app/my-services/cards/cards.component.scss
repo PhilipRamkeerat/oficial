@@ -1,0 +1,39 @@
+@import "../../../styles.scss";
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 310px;
+  height: 225px;
+  background-color: $black-cards;
+  text-align: center;
+  padding: 24px;
+  margin: 10px;
+}
+
+.card__icon {
+  width: 50px;
+  height: 50px;
+}
+
+.card__title {
+  font-family: $gotham-black;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card__subtitle {
+  font-family: $gotham-light;
+  font-size: 16px;
+  color: #767676;
+}
