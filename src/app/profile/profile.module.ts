@@ -11,6 +11,7 @@ import { PersonalInformationComponent } from './personal-information/personal-in
 import { ProgressBarComponent } from './personal-information/progress-bar/progress-bar.component';
 import { SkillsComponent } from './personal-information/skills/skills.component';
 import { SocialIconsComponent } from './personal-information/social-icons/social-icons.component';
+import { MyServicesComponent } from '../my-services/my-services.component';
 
 // Fornecer o serviço Window manualmente
 export const WINDOW_PROVIDERS = [
@@ -30,7 +31,8 @@ export const WINDOW_PROVIDERS = [
     HideOnMobileDirective,
     ProgressBarComponent,
     SkillsComponent,
-    ExtraSkillsComponent
+    ExtraSkillsComponent,
+    MyServicesComponent
   ],
   imports: [
     CommonModule
