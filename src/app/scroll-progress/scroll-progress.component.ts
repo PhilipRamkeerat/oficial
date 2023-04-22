@@ -40,6 +40,8 @@ export class ScrollProgressComponent {
 
     // Calculates the scroll progress as a percentage of the total available scroll
     const progress = (scrollTop / (documentHeight - windowHeight)) * 100;
+    // Multiplies the scroll progress by 100 to convert it to a percentage
+    // and updates the progress bar with the new height
     this.progressHeight = progress + '%'; // Update the height of the progress bar
   }
 
