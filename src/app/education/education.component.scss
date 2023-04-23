@@ -54,17 +54,7 @@
     text-align: center;
 
     &:nth-child(odd) {
-      & .education-history__period--highlight {
-        width: 100%;
-      }
-    }
-
-    &--highlight {
-      background-color: orange;
-      width: 200px;
-      color: white;
-
-      @media (max-width: 767px) {
+      &.education-history__period--highlight {
         width: 100%;
       }
     }
@@ -95,8 +85,17 @@
   }
 
   &__period {
+    &--highlight {
+      background-color: orange;
+      display: inline-block;
+      color: white;
 
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+    }
   }
+
 
   &__description {
     text-align: justify;
