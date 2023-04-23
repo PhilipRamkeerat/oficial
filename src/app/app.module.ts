@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ProfileModule } from './profile/profile.module';
 import { ScrollProgressComponent } from './scroll-progress/scroll-progress.component';
+import { EducationComponent } from './education/education.component';
 
 @NgModule({
   declarations: [

@@ -13,6 +13,7 @@ import { SkillsComponent } from './personal-information/skills/skills.component'
 import { SocialIconsComponent } from './personal-information/social-icons/social-icons.component';
 import { MyServicesComponent } from '../my-services/my-services.component';
 import { CardsComponent } from '../my-services/cards/cards.component';
+import { EducationComponent } from '../education/education.component';
 
 // Fornecer o serviço Window manualmente
 export const WINDOW_PROVIDERS = [
@@ -34,7 +35,8 @@ export const WINDOW_PROVIDERS = [
     SkillsComponent,
     ExtraSkillsComponent,
     MyServicesComponent,
-    CardsComponent
+    CardsComponent,
+    EducationComponent
   ],
   imports: [
     CommonModule
