@@ -1,14 +1,22 @@
+<app-info-box [title]="title" [description]="description"></app-info-box>
 
-<div class="portfolio">
-  <div class="portfolio__categories">
-    <button *ngFor="let category of categories" (click)="filter(category)" [class.active]="selectedCategory === category">{{category}}</button>
-  </div>
-  <div class="portfolio__grid">
-    <div *ngFor="let image of filteredImages" class="portfolio__item" (click)="openImage(image)">
-      <img [src]="image.src" [alt]="image.alt" />
-      <div class="portfolio__overlay">
-        <i class="fa fa-plus" aria-hidden="true"></i>
-      </div>
+<div class="gallery">
+  <a href="https://www.google.com" class="gallery__item" target="_blank">
+    <img src="assets/images/300x300.png" alt="Placeholder" class="gallery__image">
+    <div class="gallery__overlay">
+      <i class="fa fa-plus"></i>
     </div>
-  </div>
+  </a>
+  <a href="https://www.google.com" class="gallery__item" target="_blank">
+    <img src="assets/images/300x300.png" alt="Placeholder" class="gallery__image">
+    <div class="gallery__overlay">
+      <i class="fa fa-plus"></i>
+    </div>
+  </a>
+  <a href="https://www.google.com" class="gallery__item" target="_blank">
+    <img src="assets/images/300x300.png" alt="Placeholder" class="gallery__image">
+    <div class="gallery__overlay">
+      <i class="fa fa-plus"></i>
+    </div>
+  </a>
 </div>

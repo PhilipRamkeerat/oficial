@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./portfolio-galery.component.scss']
 })
 export class PortfolioGaleryComponent {
+  title = 'Portfolio';
+  description = 'Discover my web development projects, focused on user experience and built with best practices. Explore more!';
+
   images = [
     { src: 'assets/images/300x300.png', alt: 'Placeholder Image 1', category: 'All Categories' },
     { src: 'assets/images/300x300.png', alt: 'Placeholder Image 2', category: 'Ui Design' },

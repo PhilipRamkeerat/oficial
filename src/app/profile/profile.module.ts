@@ -15,6 +15,7 @@ import { MyServicesComponent } from '../my-services/my-services.component';
 import { CardsComponent } from '../my-services/cards/cards.component';
 import { EducationComponent } from '../education/education.component';
 import { PortfolioGaleryComponent } from '../portfolio-galery/portfolio-galery.component';
+import { SharedModule } from '../shared/shared.module';
 
 // Fornecer o serviço Window manualmente
 export const WINDOW_PROVIDERS = [
@@ -41,7 +42,8 @@ export const WINDOW_PROVIDERS = [
     PortfolioGaleryComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ],
   exports: [
     AboutMeComponent,
