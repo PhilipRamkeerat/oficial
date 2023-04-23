@@ -8,35 +8,39 @@ import { Component, OnInit } from '@angular/core';
 export class PortfolioGaleryComponent {
   title = 'Portfolio';
   description = 'Discover my web development projects, focused on user experience and built with best practices. Explore more!';
+  activeCategory: string = 'Web Development';
 
-  images = [
-    { src: 'assets/images/300x300.png', alt: 'Placeholder Image 1', category: 'All Categories' },
-    { src: 'assets/images/300x300.png', alt: 'Placeholder Image 2', category: 'Ui Design' },
-    { src: 'assets/images/300x300.png', alt: 'Placeholder Image 3', category: 'Web Templates' },
-    { src: 'assets/images/300x300.png', alt: 'Placeholder Image 4', category: 'Ui Design' },
-    { src: 'assets/images/300x300.png', alt: 'Placeholder Image 5', category: 'Web Templates' },
-    { src: 'assets/images/300x300.png', alt: 'Placeholder Image 6', category: 'All Categories' },
+  images: { src: string, alt: string }[] = [
+    { src: 'assets/images/300x300.png', alt: 'Image 1' },
+    { src: 'assets/images/300x300.png', alt: 'Image 2' },
+    { src: 'assets/images/300x300.png', alt: 'Image 3' },
   ];
 
-  categories = ['All Categories', 'Ui Design', 'Web Templates'];
-  selectedCategory = 'All Categories';
-  filteredImages = this.images;
+  webDevImages: { src: string, alt: string }[] = [
+    { src: 'assets/images/300x300.png', alt: 'Image 1' },
+    { src: 'assets/images/300x300.png', alt: 'Image 2' },
+    { src: 'assets/images/300x300.png', alt: 'Image 3' },
+  ];
 
-  constructor() {}
+  uiUxImages: { src: string, alt: string }[] = [
+    { src: 'assets/images/ui-ux.jpg', alt: 'Image 4' },
+    { src: 'assets/images/ui-ux.jpg', alt: 'Image 5' },
+    { src: 'assets/images/ui-ux.jpg', alt: 'Image 6' },
+  ];
 
-  ngOnInit(): void {}
-
-  filter(category: string): void {
-    this.selectedCategory = category;
-    if (category === 'All Categories') {
-      this.filteredImages = this.images;
-    } else {
-      this.filteredImages = this.images.filter(image => image.category === category);
-    }
+  changeCategory(category: string) {
+    this.activeCategory = category;
   }
 
-  openImage(image: any): void {
-    window.open(image.src, '_blank');
+  getImagesForCategory() {
+    switch (this.activeCategory) {
+      case 'Web Development':
+        return this.webDevImages;
+      case 'UI/UX Design':
+        return this.uiUxImages;
+      default:
+        return this.images;
+    }
   }
 }
 

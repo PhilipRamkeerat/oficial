@@ -16,13 +16,13 @@
 
 .gallery__item {
   width: 33.3%;
-  height: auto;
+  height: 300px;
   position: relative;
   overflow: hidden;
 
   @media (max-width: 768px) {
     width: 100%;
-    height: auto;
+    height: 300px;
 
     padding-left: 1rem;
     padding-right: 1rem;
@@ -62,4 +62,29 @@
 
 .gallery__item:hover .gallery__overlay i {
   transform: scale(1.2);
+}
+
+.category-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.category-selector__button {
+  font-size: 1rem;
+  color: $white;
+  cursor: pointer;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+  font-family: $gotham-light;
+
+  &:hover {
+    color: #ffa500;
+  }
+
+  &--active {
+    color: #ffa500;
+    font-weight: bold;
+  }
 }

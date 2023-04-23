@@ -1,20 +1,13 @@
 <app-info-box [title]="title" [description]="description"></app-info-box>
 
+<div class="category-selector">
+  <div class="category-selector__button" [class.category-selector__button--active]="activeCategory === 'Web Development'" (click)="changeCategory('Web Development')">Web Development</div>
+  <div class="category-selector__button" [class.category-selector__button--active]="activeCategory === 'UI/UX Design'" (click)="changeCategory('UI/UX Design')">UI/UX Design</div>
+</div>
+
 <div class="gallery">
-  <a href="https://www.google.com" class="gallery__item" target="_blank">
-    <img src="assets/images/300x300.png" alt="Placeholder" class="gallery__image">
-    <div class="gallery__overlay">
-      <i class="fa fa-plus"></i>
-    </div>
-  </a>
-  <a href="https://www.google.com" class="gallery__item" target="_blank">
-    <img src="assets/images/300x300.png" alt="Placeholder" class="gallery__image">
-    <div class="gallery__overlay">
-      <i class="fa fa-plus"></i>
-    </div>
-  </a>
-  <a href="https://www.google.com" class="gallery__item" target="_blank">
-    <img src="assets/images/300x300.png" alt="Placeholder" class="gallery__image">
+  <a *ngFor="let image of getImagesForCategory()" href="https://www.google.com" class="gallery__item" target="_blank">
+    <img [src]="image.src" [alt]="image.alt" class="gallery__image">
     <div class="gallery__overlay">
       <i class="fa fa-plus"></i>
     </div>
