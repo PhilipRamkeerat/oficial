@@ -1,9 +1,11 @@
 @import "../../styles.scss";
+/* Category Selector */
 .category-selector {
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
 
+  /* Category Selector Button */
   &__button {
     font-family: sans-serif;
     font-size: 1rem;
@@ -12,38 +14,44 @@
     cursor: pointer;
     color: gray;
 
+    /* Button Hover and Active State */
     &:hover,
     &--active {
       color: orange;
     }
 
+    /* Active Button */
     &--active {
       font-weight: bold;
     }
   }
 }
 
+/* Gallery */
 .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
-  max-width: 970px; /* adicionado */
+  max-width: 970px; /* added */
   margin: 0 auto;
 
+  /* Gallery Item */
   &__item {
     position: relative;
     overflow: hidden;
-    width: 300px;
+    width: auto;
     height: 300px;
 
+    /* Gallery Image */
     & .gallery__image {
       display: block;
       width: 100%;
-      height: auto; /* adicionado */
+      height: auto; /* added */
       object-fit: cover;
     }
 
+    /* Gallery Overlay */
     & .gallery__overlay {
       position: absolute;
       top: 0;
@@ -58,6 +66,7 @@
       align-items: center;
       cursor: pointer;
 
+      /* Gallery Overlay Icon */
       & i {
         font-size: 1.5rem;
         color: white;
@@ -65,6 +74,7 @@
       }
     }
 
+    /* Gallery Item Hover */
     &:hover .gallery__overlay {
       opacity: 1;
     }
@@ -73,9 +83,10 @@
       transform: scale(1.2);
     }
 
+    /* Gallery Item on Small Screens */
     @media (max-width: 768px) {
-      width: calc(80% - 1rem); /* adicionado */
-      margin: 0.5rem; /* adicionado */
+      width: calc(80% - 1rem); /* added */
+      margin: 0.5rem; /* added */
     }
   }
 }
