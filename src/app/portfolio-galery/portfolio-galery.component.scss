@@ -40,8 +40,8 @@
   &__item {
     position: relative;
     overflow: hidden;
-    width: auto;
-    height: 300px;
+    width: 300px;
+    height: auto;
 
     /* Gallery Image */
     & .gallery__image {
